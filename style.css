@@ -1,0 +1,31 @@
+.container {
+    width: 1080px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#form-area {
+    width: 1080px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#form-area .form-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#form-area label {
+    float: left;
+    width: 150px;
+    font-size: 1.5em;
+}
+
+#form-area select {
+    float: left;
+    width: 300px;
+    font-size: 1.5em;
+}

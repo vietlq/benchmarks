@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python List Benchmarks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-area">
+            <div class="form-holder">
+                <img src="code2pro.png" width="200px"><br/>
+                <h1>Python List Benchmarks</h1>
+                <form id="benchmarks-form">
+                    <label>Data Series:</label>
+                    <select id="select-data-types">
+                        <option id="op-ratio" value="ratio">Ratio (N vs 1000)</option>
+                        <option id="op-per_sec" value="per_sec">OPs / sec</option>
+                        <option id="op-per_round" value="per_round">Per Round (ms)</option>
+                        <option id="op-raw" value="raw">Raw Time(s) (300 Rounds)</option>
+                    </select>
+                    <div class="clear"></div><br/>
+                    <label>Operations:</label>
+                    <select id="select-operations">
+                        <option id="op-all" value="ALL">ALL</option>
+                        <option id="op-populate" value="populate">Populate</option>
+                        <option id="op-insert" value="insert">Insert</option>
+                        <option id="op-delete" value="delete">Delete</option>
+                        <option id="op-search" value="search">Search</option>
+                    </select>
+                    <div class="clear"></div><br/>
+                    <label>Complexities:</label>
+                    <select id="select-complexities">
+                        <option id="op-all" value="ALL">ALL</option>
+                        <option id="op-constant" value="O(1)">Constant - O(1)</option>
+                        <option id="op-linear" value="O(N)">Linear - O(N)</option>
+                        <option id="op-square" value="O(N*N)">Square - O(N*N)</option>
+                    </select>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+        <div id="charting-area" style="width: 1080px; height: 600px;">
+            <canvas id="myChart" width="1080" height="600"></canvas>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <script type="text/javascript" src="jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="Chart.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
